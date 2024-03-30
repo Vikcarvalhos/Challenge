@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import {Link} from 'react-router-dom';
 import { TiThMenu } from "react-icons/ti";
 import '../css/nav.css';
-import logo from '../assets/img/logo.png';
+import logo from '../assets/img/nav/logo.png';
 
 function Nav(){
 

@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+
+    .our-project{
+        display: flex;
+        gap: 10rem;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 90%;
+        padding: 0 20px;
+    }
+    
+    .our-project-image img{
+        height: 60vh;
+        position: relative;
+        top: 0;
+    }
+    
+    .our-project-text{
+        display: flex;
+        width: 500px;
+        flex-direction: column;
+        justify-content: center;
+        gap: 3rem;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    .our-project-text h1, h2{
+        font-size: 3rem;
+    }
+    
+    .our-project-text h1{
+        font-weight: 300;
+        color: #BDBDBD;
+    }
+    
+    .our-project-text p{
+        font-weight: 700;
+        font-size: 1.2rem;
+        color: #000;
+    }
+
+    .steps{
+        display: flex;
+        justify-content: space-around;
+        height: 80vh;
+    }
+
+    .step-images{
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        align-self: center;
+        width: 40%;
+        height: 80%;
+    }
+
+    .step1{
+        align-self: center;
+        height: 70%;
+    }
+
+    .step2{
+        height: 70%;
+    }
+
+    .step3{
+        height: 40%;
+    }   
+
+    .step-images-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        height: 70%;
+        gap: 0.5rem;
+    }
+
+    .step-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 40%;
+    }
+
+    .step-text h2{
+        color: #BDBDBD;
+        font-family: Roboto;
+        font-size: 64px;
+        font-weight: 300;
+        line-height: 64px;
+        text-align: left;
+    }
+
+    .step-text p{
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 25px;
+        text-align: left;
+    }
+
+    .step-button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+        padding: 20px;
+        background-color: #006BA6;
+        border: none;
+        color: white;
+    }
+
+    .main-focus{
+        width: 100%;
+    }
+
+    .main-focus h2{
+        font-family: Roboto;
+        font-size: 64px;
+        font-weight: 300;
+        text-align: left;
+        color: #BDBDBD;
+        padding-left: 100px;
+    }
+
+    .main-focus-div{
+        display: flex;
+        width: 30%;
+        align-items: center;
+    }
+
+    .main-focus-div h3{
+        font-family: Roboto;
+        font-size: 200px;
+        font-weight: 900;
+        text-align: left;
+        color: #007864;
+
+    }
+
+    .main-focus-container{
+        display: flex;
+        flex-direction: rox;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .our-project{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 90%;
+    }
+    
+    .our-project-image img{
+        width: 100%;
+    }
+    
+    .our-project-text{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        gap: 3rem;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    .our-project-text h1,
+    .our-project-text h2 {
+        font-size: 3rem;
+        padding-left: 10vw;
+    }
+    
+    .our-project-text h1{
+        font-weight: 300;
+        color: #BDBDBD;
+    }
+    
+    .our-project-text p{
+        text-align: center;
+        font-weight: 700;
+        font-size: 1.2rem;
+        color: #000;
+    }
+
+    .steps{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        height: 800px;
+    }
+
+    .step-images{
+        display: flex;
+        width: 100vw;
+        background-color: aliceblue ;
+        align-items: center;
+
+    }
+
+    .step-images-div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .step1{
+        width: 46%;
+    }
+
+    .step2{
+        width: 100%;
+    }
+
+    .step3{
+        width: 100%;
+    }
+
+    .step-text{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: space-between;
+        height: 50%;
+        padding: 20px;
+    }
+
+    .step-text h2{
+        color: #BDBDBD;
+        font-family: Roboto;
+        font-size: 64px;
+        font-weight: 300;
+        line-height: 64px;
+    }
+
+    .step-text p{
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 25px;
+        text-align: left;
+    }
+
+    .step-button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 20px;
+        background-color: #006BA6;
+        border: none;
+        color: white;
+    }
+
+    .main-focus{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .main-focus h2{
+        font-family: Roboto;
+        font-size: 64px;
+        font-weight: 300;
+        text-align: left;
+        color: #BDBDBD;
+    }
+
+    .main-focus-div{
+        display: flex;
+        width: 80%;
+        align-items: center;
+    }
+
+    .main-focus-div h3{
+        font-family: Roboto;
+        font-size: 200px;
+        font-weight: 900;
+        text-align: left;
+        color: #007864;
+
+    }
+
+    .main-focus-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
