@@ -1,14 +1,12 @@
 import '../css/home.css'
 
-function Home(){
+function Home() {
 
-    return(
-        <>
-            <main id='home-main'>
-                
-            </main>
-        </>
-    )
+  return (
+    <>
+    
+    </>
+  );
 }
 
-export default Home
+export default Home;
