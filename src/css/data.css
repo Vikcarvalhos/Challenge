@@ -1,0 +1,99 @@
+@media screen and (min-width: 768px){
+    #data{
+        padding: 30px 100px;
+    }
+    
+    #data h1{
+        font-family: Roboto;
+        font-size: 64px;
+        font-weight: 300;
+        line-height: 64px;
+        text-align: left;
+        color: #BDBDBD;
+    }
+    
+    #data h2{
+        font-family: Roboto;
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 64px;
+        text-align: left;
+        color: #333333;
+    }
+
+    .data-content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .data-content img{
+        border: 3px solid #000;
+        width: 50%;
+    }
+
+    .data-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 40%;
+    }
+
+    .data-btn{
+        background-color: #006BA6;
+        border: none;
+        padding: 20px;
+        color: white;
+    }
+}
+
+@media screen and (max-width: 767px){
+    #data{
+        padding: 10px 20px;
+    }
+    
+    #data h1{
+        font-family: Roboto;
+        font-size: 64px;
+        font-weight: 300;
+        line-height: 64px;
+        text-align: left;
+        color: #BDBDBD;
+    }
+    
+    #data h2{
+        font-family: Roboto;
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 64px;
+        text-align: left;
+        color: #333333;
+    }
+
+    .data-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .data-content img{
+        border: 3px solid #000;
+        width: 100%;
+    }
+
+    .data-text{
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .data-btn{
+        background-color: #006BA6;
+        border: none;
+        padding: 20px;
+        color: white;
+    }
+}
