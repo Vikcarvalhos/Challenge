@@ -7,6 +7,7 @@ import step1 from '../assets/img/home/step1.svg';
 import step2 from '../assets/img/home/step2.svg';
 import step3 from '../assets/img/home/step3.svg';
 import { GoArrowRight } from "react-icons/go";
+import contact from '../assets/img/home/contact.svg';
 
 function Home() {
   const images = [
@@ -98,6 +99,23 @@ function Home() {
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. At, illum iste. Cum, quo quam est architecto impedit placeat quia quas quibusdam quisquam soluta magni! Quos consectetur officiis quis eius blanditiis.
               </p>
             </div>
+          </div>
+        </section>
+        <section className='contact'>
+          <h2>Contato</h2>
+          <div className='contact-container'>
+            <form className='contact-form'>
+              <input type="text" id="name" name="name" placeholder="Name" required />
+
+              <input type="tel" id="phone" name="phone" placeholder="Phone Number" required />
+
+              <input type="email" id="email" name="email" placeholder="Email" required />
+
+              <textarea id="message" name="message" placeholder="Message" required style={{resize: "none"}}></textarea>
+
+              <button type="submit">Send Email</button>
+            </form>
+            <img src={contact} className='contact-image'></img>
           </div>
         </section>
 
