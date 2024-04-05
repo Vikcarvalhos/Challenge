@@ -1,8 +1,9 @@
-# React + Vite
+# ComPasso
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Responsáveis
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Caio Hideki Cardenas Ishizu - 553630
+- Diana Letícia de Souza Inocencio - 553562
+- Jorge Henrique Freire Booz - 552700
+- Erick Molina Barreiros - 553852
+- João Viktor Carvalho de Souza - 552613
