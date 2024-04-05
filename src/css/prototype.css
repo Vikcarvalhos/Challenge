@@ -41,8 +41,13 @@
         gap: 1rem;
     }
 
-    .prototype-content img{
-        width: 100%;
+    .prototype-map-img{
+        width: 90vw;
+        height: 30vh;
+        background-image: url(../assets/img/prototype/mapa.svg);
+        background-size: cover  ;
+        background-repeat: no-repeat;
+        background-position: center;
     }
 
 }
@@ -92,6 +97,15 @@
         justify-content: space-around;
         align-items: center;
         gap: 1rem;
+    }
+
+    .prototype-map-img{
+        width: 100vw;
+        height: 30vh;
+        background-image: url(../assets/img/prototype/mapa.svg);
+        background-size: cover  ;
+        background-repeat: no-repeat;
+        background-position: center;
     }
 
 }
