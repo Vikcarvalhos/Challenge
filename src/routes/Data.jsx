@@ -1,6 +1,6 @@
 import React from 'react'
 import '../css/data.css'
-import map from '../assets/img/data/1.svg'
+import map from '../assets/img/data/1.gif'
 
 function Data(){
 
@@ -14,11 +14,21 @@ function Data(){
                             <h2>Data</h2>
                         </div>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Laboriosam quod porro recusandae dolores optio. 
-                            Iusto ipsa porro animi optio? Nemo ducimus dolore ipsa cumque quis iusto adipisci nam veniam ipsam.
-                            </p>
-                        <button className='data-btn'>Research</button>
+                            O estudo avaliou um sistema inovador de guia 
+                            para pacientes em tempo real, utilizando 
+                            tecnologia de localização interna e um 
+                            aplicativo para Android. Testes com funcionários 
+                            e pacientes mostraram que o sistema é preciso, 
+                            fácil de usar e altamente satisfatório, com 
+                            grande potencial para melhorar a experiência 
+                            dos pacientes em hospitais. A alta taxa de 
+                            sucesso nos testes e a pontuação de satisfação 
+                            de 4,0 em 5,0 demonstram o valor do sistema 
+                            como um serviço hospitalar centrado no paciente.
+                        </p>
+                        <a className='data-btn' href='https://www.sciencedirect.com/science/article/abs/pii/S1386505616300521?via%3Dihub'>
+                            Research
+                        </a>
                     </div>
                     <img src={map} alt='map' className='data-img'/>
                 </section>

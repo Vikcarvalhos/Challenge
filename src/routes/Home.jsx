@@ -78,8 +78,18 @@ function Home() {
             </div>
           </div>
           <div className='step-text'>
-            <h2>Steps</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, facere voluptatum quo et necessitatibus corrupti culpa magni eligendi omnis? At, reiciendis! Omnis at voluptate laudantium eaque sit molestiae blanditiis recusandae?</p>
+            <h2>Proposta</h2>
+            <p>
+              Neste projeto, propomos a implementação de um Totem 
+              Interativo para pacientes e acompanhantes em ambientes 
+              hospitalares. O objetivo é abordar e solucionar os 
+              desafios comuns enfrentados por esses usuários como 
+              dificuldades de navegação dentro do hospital e ansiedade 
+              dentro de um complexo hospitalar. Através de uma solução 
+              integrada e centrada no usuário, pretendemos oferecer uma 
+              experiência hospitalar mais fluida, informativa e menos 
+              estressante.
+            </p>
             <button className='step-button'>Read More<GoArrowRight /></button>
           </div>
         </section>
@@ -90,13 +100,19 @@ function Home() {
             <div className='main-focus-div'>
               <h3>1</h3>
               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. At, illum iste. Cum, quo quam est architecto impedit placeat quia quas quibusdam quisquam soluta magni! Quos consectetur officiis quis eius blanditiis.
+                Investir em soluções eficazes para localização dentro 
+                de complexos hospitalares é fundamental para garantir 
+                uma experiência positiva e eficiente para pacientes, 
+                acompanhantes e profissionais da saúde.
               </p>
             </div>
             <div className='main-focus-div'>
               <h3>2</h3>
               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. At, illum iste. Cum, quo quam est architecto impedit placeat quia quas quibusdam quisquam soluta magni! Quos consectetur officiis quis eius blanditiis.
+                O ComPasso simboliza empatia, inclusão, 
+                inovação e colaboração, visando melhorar a experiência 
+                hospitalar com ênfase no cuidado humano e no apoio 
+                através da tecnologia e da participação comunitária.
               </p>
             </div>
           </div>

@@ -24,7 +24,6 @@ function Prototype(){
                             reiciendis qui atque nulla modi vero recusandae, fugit omnis placeat quisquam doloribus ipsam consectetur. Rerum.
                         </p>
                     </div>
-                    <img src={rectImg} alt='rectangle' className='prototype-img'/>
                 </section>
             </main>
         </>

@@ -13,22 +13,34 @@ function Concept(){
                     <div className='concept-div'>
                         <img src={imgNull} alt='image' />
                         <div className='concept-text'>
-                            <h3>1</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam</p>
+                            <h3>Informações Claras e Suporte Emocional</h3>
+                            <p>
+                                Transformação de experiências hospitalares 
+                                potencialmente traumáticas em experiências 
+                                mais gerenciáveis e acolhedoras.
+                            </p>
                         </div>
                     </div>
                     <div className='concept-div-inverted'>
                         <img src={imgNull} alt='image' />
                         <div className='concept-text'>
-                            <h3>2</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam</p>
+                            <h3>Acesso Facilitado a Informações</h3>
+                            <p>
+                                Melhor comunicação entre pacientes e 
+                                hospital, facilitando acesso a informações 
+                                e respostas rápidas.
+                            ​</p>
                         </div>
                     </div>
                     <div className='concept-div'>
                         <img src={imgNull} alt='image' />
                         <div className='concept-text'>
-                            <h3>3</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam</p>
+                            <h3>Confiança e Satisfação Elevadas</h3>
+                            <p>
+                                Maior confiança no atendimento recebido 
+                                e aumento nos índices de satisfação de 
+                                pacientes e acompanhantes.
+                            </p>
                         </div>
                     </div>
                 </section>

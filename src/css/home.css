@@ -299,6 +299,7 @@
         justify-content: space-between;
         height: 50%;
         padding: 20px;
+        margin: 50px 0px;
     }
 
     .step-text h2{
@@ -307,6 +308,7 @@
         font-size: 64px;
         font-weight: 300;
         line-height: 64px;
+        margin-top: 80px;
     }
 
     .step-text p{

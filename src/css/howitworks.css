@@ -73,6 +73,8 @@
         width: 60%;
         padding: 20px;
         background-color: #006BA6;
+        text-decoration: none;
+        text-align: center;
         border: none;
         color: white;
     }
