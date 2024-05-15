@@ -11,7 +11,7 @@
 @media screen and (min-width: 768px) {
     header {
         width: 100%;
-        background-color: #006BA6;
+        background-color: #00869F;
         color: white;
         font-family: "Roboto", sans-serif;
         text-transform: uppercase;
@@ -44,7 +44,7 @@
     }
 
     #menu a:hover {
-        color: #FF7D00;
+        color: #F00013;
     }
 
     .menu-button{
@@ -58,7 +58,7 @@
     .hover-underline {
         display: inline-block;
         position: relative;
-        color: #006BA6;
+        color: #00869F;
     }
 
     .hover-underline:hover::after {
@@ -74,7 +74,7 @@
         height: 1px;
         bottom: 0;
         left: 0;
-        background-color: #006BA6;
+        background-color: #00869F;
         transform-origin: bottom left;
         transition: transform 0.3s ease-out;
     }
@@ -131,7 +131,7 @@
 @media screen and (max-width: 767px) {
     header {
         width: 100%;
-        background-color: #006BA6;
+        background-color: #00869F;
         color: white;
         font-family: "Roboto", sans-serif;
         text-transform: uppercase;
