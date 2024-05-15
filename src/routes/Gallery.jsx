@@ -1,25 +1,33 @@
 import React from 'react';
-import '../css/gallery.css';
-import image1 from '../assets/img/gallery/1.svg';
-import image2 from '../assets/img/gallery/2.svg';
-import image3 from '../assets/img/gallery/3.svg';
-import image4 from '../assets/img/gallery/4.svg';
-import image5 from '../assets/img/gallery/5.svg';
+import '../css/galleryGrid.css'
+import caminho from '../assets/img/gallery/caminho.jpg';
 
-function Gallery() {
-  const images = [image1, image2, image3, image4, image5];
+
+
+function Consulta() {
 
   return (
-    <main className='gallery'>
-        <h1>Photo</h1>
-        <h2>Gallery</h2>
-        <div className='gallery-images'>
-            {images.map((image, index) => (
-            <img key={index} src={image} alt={`Image ${index + 1}`} />
-            ))}
-        </div>
+    <main className='consulta'>
+
+      <img src={caminho} alt="caminhoDivertido" className='caminhoDivertido'/>
+
+      <div className='tituloConsulta'>
+        <h1>Próxima</h1>
+        <h2>Consulta</h2>
+      </div>
+      
+
+      <div className='infosPaciente'>
+        <p className="informacoes"><h5>Nome:</h5> Usuário da Silva</p>
+        
+        <p className="informacoes"><h5>Atendimento médico:</h5> Ortopedista</p>
+
+        <p className="informacoes"><h5>Próxima Consulta:</h5> 23/05/2024</p>
+      </div>
+      
+
     </main>
   );
 }
 
-export default Gallery;
+export default Consulta;

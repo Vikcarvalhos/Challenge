@@ -25,12 +25,12 @@ function Nav(){
                     <div className={menu ? 'overlay open' : 'overlay'}>
                     <button className='close-button' onClick={closeNav}>X</button>
                         <div id='menu' className='overlay-content'>
-                            <Link to="/" onClick={closeNav} className='hover-underline'>Main</Link>
-                            <Link to="/gallery" onClick={closeNav} className='hover-underline'>Gallery</Link>
-                            <Link to="/howitworks" onClick={closeNav} className='hover-underline'>How It Works</Link>
-                            <Link to="/concept" onClick={closeNav} className='hover-underline'>Concept</Link>
-                            <Link to="/data" onClick={closeNav} className='hover-underline'>Data</Link>
-                            <Link to="/prototype" onClick={closeNav} className='hover-underline'>Prototype</Link>
+                            <Link to="/" onClick={closeNav} className='hover-underline'>Início</Link>
+                            <Link to="/gallery" onClick={closeNav} className='hover-underline'>Consulta</Link>
+                            <Link to="/howitworks" onClick={closeNav} className='hover-underline'>Como funciona</Link>
+                            <Link to="/concept" onClick={closeNav} className='hover-underline'>Conceito</Link>
+                            <Link to="/data" onClick={closeNav} className='hover-underline'>Dados</Link>
+                            <Link to="/prototype" onClick={closeNav} className='hover-underline'>Protótipo</Link>
                         </div>
                     </div>
                 </nav>
