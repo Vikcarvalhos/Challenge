@@ -48,6 +48,9 @@
         text-align: center;
         text-decoration: none;
     }
+    .data-btn:hover{
+        background-color: #336182;
+    }
 }
 
 @media screen and (max-width: 767px){

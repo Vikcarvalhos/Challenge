@@ -8,8 +8,8 @@ function Prototype(){
     return(
         <>
             <main id='prototype'>
-                <h1>Problem</h1>
-                <h2>Prototype</h2>
+                <h1>Protótipo</h1>
+                <h2>da Solução</h2>
                 <section className='prototype-content'>
                     <div className='prototype-map-img'></div>
                     <div className='prototype-text'>

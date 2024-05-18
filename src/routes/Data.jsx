@@ -10,8 +10,8 @@ function Data(){
                 <section className='data-content'>
                     <div className='data-text'>
                         <div className='data-title'>
-                            <h1>Problem</h1>
-                            <h2>Data</h2>
+                            <h1>Dados</h1>
+                            <h2>do Problema</h2>
                         </div>
                         <p>
                             O estudo avaliou um sistema inovador de guia 
@@ -27,7 +27,7 @@ function Data(){
                             como um serviço hospitalar centrado no paciente.
                         </p>
                         <a className='data-btn' href='https://www.sciencedirect.com/science/article/abs/pii/S1386505616300521?via%3Dihub'>
-                            Research
+                            Mais Informações
                         </a>
                     </div>
                     <img src={map} alt='map' className='data-img'/>
