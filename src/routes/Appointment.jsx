@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import '../css/Appointment.css';
-import caminho from '../assets/img/gallery/caminho.jpg';
+import idUm from '../assets/img/gallery/1.jpg';
+import idDois from '../assets/img/gallery/2.jpg';
+import idTres from '../assets/img/gallery/3.jpg';
+import idQuatro from '../assets/img/gallery/4.jpg';
+import idCinco from '../assets/img/gallery/5.jpg';
 import { motion } from "framer-motion";
 import cadastro from '../cadastro.json';
 
@@ -13,18 +17,40 @@ function Consulta() {
     setResult(item);
   };
 
+  const handleNewSearch = () => {
+    setId('');
+    setResult(null);
+  };
+
+  const getImageById = (id) => {
+    switch (id) {
+      case 1:
+        return idUm;
+      case 2:
+        return idDois;
+      case 3:
+        return idTres;
+      case 4:
+        return idQuatro;
+      case 5:
+        return idCinco;
+      default:
+        return null;
+    }
+  };
+
   return (
     <main className='consulta'>
-      
       {result && (
-        <motion.image  
+        <motion.div  
           className='caminhoDivertido'
           initial={{ y: 0, opacity: -1 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1 }}
         >
-          <img src={caminho} alt="caminhoDivertido" className='caminhoDivertido'/>
-        </motion.image>
+          <img src={getImageById(result.id)} alt="caminhoDivertido" className='caminhoDivertido'/>
+          <button onClick={handleNewSearch} className='buttonConsulta'>Nova Consulta</button>
+        </motion.div>
       )}
 
       <motion.div
