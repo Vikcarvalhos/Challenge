@@ -40,6 +40,7 @@
     flex-direction: row;
     gap: 1rem;
     padding: 1rem;
+    align-items: center;
   }
 
   .informacoesMotion{
@@ -92,4 +93,109 @@
       border-radius: 4px;
       box-sizing: border-box;
   }
+}
+
+@media screen and (max-width: 768px) {
+
+  .tituloConsulta { grid-area: title; }
+  .infosPaciente { grid-area: patient; }
+  .caminhoDivertido{ grid-area: image; }
+
+  .consulta {
+    display: grid;
+    grid-template-areas:
+      'title'
+      'patient'
+      'image';
+    gap: 3rem;
+    padding: 4rem;
+    align-items: center;
+  }
+
+  .tituloConsulta{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .tituloConsulta h1{
+    font-size: 3rem;
+    font-weight: 300;
+    color: #BDBDBD;
+  }
+  .tituloConsulta h2{
+    font-size: 3rem;
+    font-weight: 500;
+    color: #000 ;
+  }
+  
+  .infosPaciente{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    font-size: 26px;
+    align-items: center;
+  }
+
+  .informacoes{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+  }
+
+  .informacoesMotion{
+    display: flex;
+    flex-direction: column; 
+    padding: 1rem;
+  }
+  .informacoes h5{
+    color: #00869F;
+  }
+
+  .caminhoDivertido{
+    width: 100%;
+    transition: 0.3s;
+    justify-self: center;
+  }
+  .caminhoDivertido:hover{
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.233);
+  }
+
+  .centerContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .buttonConsulta{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 60%;
+      padding: 1rem;
+      background-color: #00869F;
+      border: none;
+      color: white;
+      cursor: pointer;
+  }
+  .buttonConsulta:hover{
+      background-color: #336182;
+      box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.233)
+  }
+
+  .inputPaciente{
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+  }
+
 }

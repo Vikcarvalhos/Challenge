@@ -28,7 +28,7 @@ function Footer(){
                     </div>
                 </div>
                 <div className='footer-contacts'>
-                    <p>Contacts</p>
+                    <p>Cantatos</p>
                     <div className='footer-contacts-text'>
 
                         <p><GoLocation /> Av. Paulista, 1106 - 7º andar - Cerqueira César São Paulo/SP</p>
