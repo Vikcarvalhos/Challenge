@@ -1,14 +1,17 @@
 import React from 'react'
 import '../css/concept.css'
 import imgNull from '../assets/img/concept/image.svg'
+import information from '../assets/img/concept/information.svg'
+import satisfaction from '../assets/img/concept/satisfaction.svg'
+
 
 function Concept(){
-
+    
     return(
         <>
             <main id='concept'>
-                <h1>Project</h1>
-                <h2>Concepts</h2>
+                <h1>Conceitos</h1>
+                <h2>do Projeto</h2>
                 <section className='concept-container'>
                     <div className='concept-div'>
                         <img src={imgNull} alt='image' />
@@ -22,7 +25,7 @@ function Concept(){
                         </div>
                     </div>
                     <div className='concept-div-inverted'>
-                        <img src={imgNull} alt='image' />
+                        <img src={information} alt='image' />
                         <div className='concept-text'>
                             <h3>Acesso Facilitado a Informações</h3>
                             <p>
@@ -33,7 +36,7 @@ function Concept(){
                         </div>
                     </div>
                     <div className='concept-div'>
-                        <img src={imgNull} alt='image' />
+                        <img src={satisfaction} alt='image' />
                         <div className='concept-text'>
                             <h3>Confiança e Satisfação Elevadas</h3>
                             <p>

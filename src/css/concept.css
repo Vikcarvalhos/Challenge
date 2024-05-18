@@ -79,6 +79,8 @@
         color: #000000;
     }
 
+    
+
 }
 
 @media screen and (max-width: 767px){
@@ -123,7 +125,7 @@
     }
 
     .concept-div img{
-        width: 100%;
+        width: 50%;
     }
 
     .concept-div-inverted{
@@ -161,5 +163,6 @@
         text-align: left;
         color: #000000;
     }
+
 
 }
