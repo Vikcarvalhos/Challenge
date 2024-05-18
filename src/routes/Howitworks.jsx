@@ -10,8 +10,8 @@ function Howitworks(){
     return(
         <>
             <main id='how-it-works'>
-                <h1>How it</h1>
-                <h2>Works</h2>
+                <h1>Como</h1>
+                <h2>Funciona</h2>
                 <section className='work-container'>
                     <div className='work-method'>
                         <img src={pythonProt} alt='foto protótipo de python'/>
@@ -22,7 +22,7 @@ function Howitworks(){
                                 como salas de exame, de maneira eficiente. Além de fornecer direções, o sistema é capaz de armazenar informações 
                                 básicas e realizar validações para garantir a precisão dos dados.
                             </p>
-                            <a className='work-btn' href='#'>View More <span><GoArrowRight /></span></a>
+                            <a className='work-btn' href='#'>Veja Mais <span><GoArrowRight /></span></a>
                         </div>
                     </div>
                     <div className='work-method'>

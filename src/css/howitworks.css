@@ -78,6 +78,9 @@
         border: none;
         color: white;
     }
+    .work-btn:hover{
+        background-color: #336182;
+    }
     
 }
 
