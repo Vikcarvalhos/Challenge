@@ -17,27 +17,27 @@ function Footer(){
             <footer>
                 <img src={logo}></img>
                 <div className='footer-information'>
-                    <p>Information</p>
+                    <p>Informações</p>
                     <div className='footer-links'>
-                        <Link to="/" className='hover-underline'>Main</Link>
-                        <Link to="/gallery" className='hover-underline'>Gallery</Link>
-                        <Link to="/howitworks" className='hover-underline'>How It Works</Link>
-                        <Link to="/concept" className='hover-underline'>Concept</Link>
-                        <Link to="/data" className='hover-underline'>Data</Link>
-                        <Link to="/prototype" className='hover-underline'>Prototype</Link>
+                        <Link to="/" className='hover-underline'>Nosso projeto</Link>
+                        <Link to="/gallery" className='hover-underline'>Consulta</Link>
+                        <Link to="/howitworks" className='hover-underline'>Como funciona</Link>
+                        <Link to="/concept" className='hover-underline'>Conceito</Link>
+                        <Link to="/data" className='hover-underline'>Dados</Link>
+                        <Link to="/prototype" className='hover-underline'>Protótipo</Link>
                     </div>
                 </div>
                 <div className='footer-contacts'>
                     <p>Contacts</p>
                     <div className='footer-contacts-text'>
 
-                        <p><GoLocation /> 1234 Sample Street Austin Texas 78704</p>
-                        <p><FaPhoneAlt /> 512.333.2222</p>
-                        <p><GoMail /> sampleemail@gmail.com</p>
+                        <p><GoLocation /> Av. Paulista, 1106 - 7º andar - Cerqueira César São Paulo/SP</p>
+                        <p><FaPhoneAlt /> +55 11 3385 8010</p>
+                        <p><GoMail /> atendimento@fiap.com.br</p>
                     </div>
                 </div>
                 <div className='footer-social'>
-                    <p>Social Media</p>
+                    <p>Redes Sociais</p>
                     <div className='social-medias'>
                         <a href='#'><FaFacebookF /></a>
                         <a href='#'><BsTwitterX /></a>

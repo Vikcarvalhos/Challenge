@@ -126,6 +126,11 @@
         border: none;
         color: white;
     }
+    .step-button:hover{
+            cursor: pointer;
+            background-color: #336182;
+
+    }
 
     .main-focus{
         width: 100%;
@@ -213,6 +218,10 @@
         border-radius: 5px;
         background-color: #00869F;
         color: white;
+    }
+    .contact-form button:hover{
+        cursor: pointer;
+        background-color: #336182;
     }
 }
 

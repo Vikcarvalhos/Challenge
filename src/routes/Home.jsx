@@ -45,8 +45,8 @@ function Home() {
             transition={{ duration: 1 }}
           >
             <div>
-            <h1>Our</h1>
-            <h2>Project</h2>
+            <h1>Nosso</h1>
+            <h2>Projeto</h2>
             </div>
             <p>
               {texts[currentIndex]}
@@ -90,7 +90,7 @@ function Home() {
               experiência hospitalar mais fluida, informativa e menos 
               estressante.
             </p>
-            <button className='step-button'>Read More<GoArrowRight /></button>
+            <button className='step-button'>Leia Mais<GoArrowRight /></button>
           </div>
         </section>
 
@@ -129,7 +129,7 @@ function Home() {
 
               <textarea id="message" name="message" placeholder="Message" required style={{resize: "none"}}></textarea>
 
-              <button type="submit">Send Email</button>
+              <button type="submit">Enviar E-mail</button>
             </form>
             <img src={contact} className='contact-image'></img>
           </div>
