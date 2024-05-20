@@ -45,7 +45,7 @@ function Consulta() {
       }
     })
       .then(response => {
-        console.log(response.data);
+        console.log(1);
         setResult(response.data);
       })
       .catch(error => {
