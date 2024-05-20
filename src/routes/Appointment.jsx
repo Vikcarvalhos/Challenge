@@ -39,13 +39,8 @@ function Consulta() {
   }));
 
   const handleSearch = () => {
-    axios.post('http://localhost:5000/', { "caminho": selectedOption.value }, {
-      headers: {
-        'Content-Type': 'application/json'
-      }
-    })
+    axios.post('http://localhost:5000/', { "caminho": selectedOption.value })
       .then(response => {
-        console.log(1);
         setResult(response.data);
       })
       .catch(error => {

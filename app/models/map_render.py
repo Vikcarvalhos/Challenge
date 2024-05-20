@@ -1,5 +1,5 @@
-from Challenge.app.services.map import generate_map
-from Challenge.app.services.map import destiny_chose
+from app.services.map import generate_map
+from app.services.map import destiny_chose
 
 def get_data(data):
     return {

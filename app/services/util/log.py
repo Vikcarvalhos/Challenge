@@ -5,7 +5,7 @@ import os
 def save_data_to_json(data):
     try:
         file_name = datetime.now().strftime('%d-%m-%Y') + '.txt'
-        dir_path = 'Challenge/app/acess_log'
+        dir_path = './app/acess_log'
 
         if not os.path.exists(dir_path):
             os.makedirs(dir_path)
