@@ -44,7 +44,7 @@ function Consulta() {
         setResult(response.data);
       })
       .catch(error => {
-        console.error('There was an error posting the data!', error);
+        console.error('There was  an error posting the data!', error);
       });
   };
 
