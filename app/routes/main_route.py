@@ -1,6 +1,6 @@
 from flask import Blueprint, jsonify, request
-from app.controllers.map_render_controller import map_generator
-from app.services.util.log import save_data_to_json as log
+from Challenge.app.controllers.map_render_controller import map_generator
+from Challenge.app.services.util.log import save_data_to_json as log
 
 main = Blueprint('main', __name__)
 

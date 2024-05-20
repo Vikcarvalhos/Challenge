@@ -1,4 +1,4 @@
-from app.models.map_render import get_data
+from Challenge.app.models.map_render import get_data
 from types import SimpleNamespace
 import json
 

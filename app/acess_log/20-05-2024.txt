@@ -45,3 +45,4 @@
 {"ip": "127.0.0.1", "method": "POST", "url": "http://localhost:5000/", "data": {"caminho": "Q"}, "time": "20/05/2024 - 17:16:16", "obs": "Quero meu 10 kkkkk"}
 {"ip": "127.0.0.1", "method": "POST", "url": "http://localhost:5000/", "data": {"caminho": "L"}, "time": "20/05/2024 - 17:16:24", "obs": "Quero meu 10 kkkkk"}
 {"ip": "127.0.0.1", "method": "POST", "url": "http://localhost:5000/", "data": {"caminho": "B"}, "time": "20/05/2024 - 17:36:21", "obs": "Quero meu 10 kkkkk"}
+{"ip": "127.0.0.1", "method": "POST", "url": "http://127.0.0.1:5000/", "data": {"caminho": "A"}, "time": "20/05/2024 - 18:01:39", "obs": "Quero meu 10 kkkkk"}
