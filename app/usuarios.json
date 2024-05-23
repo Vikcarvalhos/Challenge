@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "nome": "Erick Te3st3e",
+        "email": "TEs33t3e@d3fsfsd.com",
+        "telefone": "1111111",
+        "consulta": "A"
+    },
+    {
+        "id": 2,
+        "nome": "Erick Te3st3e",
+        "email": "eqw@d3fsfsd.com",
+        "telefone": "1111111",
+        "consulta": "B"
+    }
+]

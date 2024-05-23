@@ -27,12 +27,14 @@ def find_user(data):
         return resultado
     return False
 def create_user(request):
-    try:
         arquivo = caminho_path+"/../usuarios.json"
-        if os.path.exists(arquivo):
-            with open(arquivo, 'r') as file:
-                usuarios = json.load(file)
-        else:
+        try:
+            if os.path.exists(arquivo):
+                with open(arquivo, 'r') as file:
+                    usuarios = json.load(file)
+            else:
+                usuarios = []
+        except json.JSONDecodeError:
             usuarios = []
 
         for u in usuarios:
@@ -59,9 +61,7 @@ def create_user(request):
             json.dump(usuarios, file, indent=4)
 
         return 200
-    except Exception as e:
-        print(e)
-        return False
+
 
 def validar_nome(nome):
     if len(nome.split()) < 2:
