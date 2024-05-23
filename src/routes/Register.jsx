@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Select from 'react-select';
 import axios from 'axios';
-import '../css/Appointment.css';
+import '../css/register.css';
 
 const destinations = {
   'A': 'Cardiologista',

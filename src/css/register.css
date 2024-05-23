@@ -1,0 +1,38 @@
+.cadastro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    gap: 1vh;
+}
+
+input{
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid #00869F;
+    border-radius: 10px;
+
+}
+
+.buttonCadastro{
+    padding: 10px;
+    background-color: #00869F;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}

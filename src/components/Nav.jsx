@@ -32,6 +32,7 @@ function Nav(){
                             <Link to="/concept" onClick={closeNav} className='hover-underline'>Conceito</Link>
                             <Link to="/data" onClick={closeNav} className='hover-underline'>Dados</Link>
                             <Link to="/prototype" onClick={closeNav} className='hover-underline'>Protótipo</Link>
+                            <Link to="/register" onClick={closeNav} className='hover-underline'>Cadastro</Link>
                         </div>
                     </div>
                 </nav>
