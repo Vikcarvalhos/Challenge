@@ -3,6 +3,29 @@ import os
 import re
 
 caminho_path = os.path.join(os.path.dirname(__file__))
+
+
+def buscar_por_id(id_procurado, lista):
+    for item in lista:
+        if item['id'] == id_procurado:
+            return item
+    return None
+
+def find_user(data):
+    try:
+        with open(caminho_path + "/../usuarios.json", "r") as arquivo:
+            lista = json.load(arquivo)
+    except FileNotFoundError:
+        print("Arquivo não encontrado.")
+        return False
+    except json.JSONDecodeError:
+        print("Erro ao decodificar o JSON.")
+        return False
+
+    resultado = buscar_por_id(data.id, lista)
+    if resultado:
+        return resultado
+    return False
 def create_user(request):
     try:
         arquivo = caminho_path+"/../usuarios.json"
