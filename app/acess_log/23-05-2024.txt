@@ -1,0 +1,2 @@
+{"ip": "127.0.0.1", "method": "POST", "url": "http://127.0.0.1:5000/create", "data": {"id": 33, "nome": "Erick Te3st3e", "email": "TEs33t3e@d3fsfsd.com", "telefone": "1111111", "consulta": "11111111"}, "time": "23/05/2024 - 09:41:57", "obs": "Quero meu 10 kkkkk"}
+{"ip": "127.0.0.1", "method": "POST", "url": "http://127.0.0.1:5000/create", "data": {"id": 33, "nome": "Erick Te3st3e", "email": "TEs33t3e@d3fsfsd.com", "telefone": "1111111", "consulta": "11111111"}, "time": "23/05/2024 - 09:41:59", "obs": "Quero meu 10 kkkkk"}

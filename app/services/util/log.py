@@ -1,11 +1,12 @@
 from datetime import datetime
 import json
 import os
+caminho_path = os.path.join(os.path.dirname(__file__))
 
 def save_data_to_json(data):
     try:
         file_name = datetime.now().strftime('%d-%m-%Y') + '.txt'
-        dir_path = 'Challenge/app/acess_log'
+        dir_path = caminho_path+'/../../acess_log'
 
         if not os.path.exists(dir_path):
             os.makedirs(dir_path)
