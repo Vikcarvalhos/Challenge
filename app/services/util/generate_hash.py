@@ -8,4 +8,4 @@ def generate_md5_hash(user_input):
 
     md5_hash = hashlib.md5(combined_string.encode()).hexdigest()
 
-    return f"{current_time} {md5_hash}"
+    return f"{md5_hash}"

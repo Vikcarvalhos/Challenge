@@ -1,7 +1,7 @@
 import json
 import os
 import re
-
+from Challenge.app.services.util.generate_hash import generate_md5_hash
 caminho_path = os.path.join(os.path.dirname(__file__))
 
 
@@ -27,7 +27,6 @@ def find_user(data):
         return resultado
     return False
 def create_user(request):
-    try:
         arquivo = caminho_path+"/../usuarios.json"
         try:
             if os.path.exists(arquivo):
@@ -39,8 +38,10 @@ def create_user(request):
             usuarios = []
 
         for u in usuarios:
-            if u['email'] == request.email:
-                return f"Email {request.email} já cadastrado com o ID {u['id']}."
+            if u['email'] == request.email or u['telefone'] == request.telefone:
+                return {
+                    "status": "added"
+                }
 
         if not validar_nome(request.nome):
             return "Nome inválido."
@@ -50,7 +51,7 @@ def create_user(request):
             return "Telefone inválido."
 
         usuario_dict = {
-            "id": len(usuarios) + 1,
+            "id": generate_md5_hash(request.nome+request.email+request.telefone+request.consulta),
             "nome": request.nome,
             "email": request.email,
             "telefone": request.telefone,
@@ -61,10 +62,11 @@ def create_user(request):
         with open(arquivo, 'w') as file:
             json.dump(usuarios, file, indent=4)
 
-        return 200
-    except Exception as e:
-        print(e)
-        return False
+        return {
+            "status": "success",
+            "message": "Usuário cadastrado com sucesso.",
+            "id": usuario_dict["id"]
+        }
 
 def validar_nome(nome):
     if len(nome.split()) < 2:

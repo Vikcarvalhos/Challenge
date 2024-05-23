@@ -76,16 +76,20 @@ function Cadastro() {
     if (validate()) {
       axios.post('http://localhost:5000/create', formData)
         .then(response => {
-          if(response.status === 200){
-            alert('Usuário cadastrado com sucesso!');
+          if(response.data.status === "success"){
+            alert('Usuário cadastrado com sucesso! seu ID é: ' + response.data.id + '.');
               setFormData({
               nome: '',
               email: '',
               telefone: '',
               consulta: null
             });
-          }else{
-            alert('Erro ao cadastrar usuário!');
+          }
+          if (response.data.status === "error"){
+            return alert('Erro ao cadastrar usuário!');
+          }
+          if (response.data.status === "added"){
+            alert('Usuário já cadastrado!');
           }
         })
         .catch(error => {
