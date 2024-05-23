@@ -12,5 +12,12 @@
         "email": "eqw@d3fsfsd.com",
         "telefone": "1111111",
         "consulta": "B"
+    },
+    {
+        "id": 3,
+        "nome": "Erick Te3st3e",
+        "email": "eqw213@d3fsfsd.com",
+        "telefone": "1111111",
+        "consulta": "C"
     }
 ]
