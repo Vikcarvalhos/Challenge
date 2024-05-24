@@ -30,22 +30,20 @@ const destinations = {
 };
 
 function Consulta() {
-  const [selectedOption, setSelectedOption] = useState(null);
+  const [id, setId] = useState(null);
   const [result, setResult] = useState(null);
 
   const options = Object.entries(destinations).map(([key, value]) => ({
     value: key,
     label: value
   }));
-
   const handleSearch = () => {
-    axios.post('http://localhost:5000/', { "caminho": selectedOption.value }, {
+    axios.post('http://localhost:5000/', { id }, {
       headers: {
         'Content-Type': 'application/json'
       }
     })
       .then(response => {
-        console.log(1);
         setResult(response.data);
       })
       .catch(error => {
@@ -54,7 +52,7 @@ function Consulta() {
   };
 
   const handleNewSearch = () => {
-    setSelectedOption(null);
+    setId('');
     setResult(null);
   };
 
@@ -113,11 +111,11 @@ function Consulta() {
           transition={{ duration: 1 }}
         >
           <div className='centerContent'>
-            <Select
-              options={options}
-              value={selectedOption}
-              onChange={setSelectedOption}
-              placeholder="Selecione um destino"
+            <input
+              type="text"
+              placeholder="Digite o ID"
+              value={id}
+              onChange={e => setId(e.target.value)}
               className="inputPaciente"
             />
             <button onClick={handleSearch} className='buttonConsulta'>Buscar</button>

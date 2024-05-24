@@ -21,7 +21,6 @@ def find_user(data):
     except json.JSONDecodeError:
         print("Erro ao decodificar o JSON.")
         return False
-
     resultado = buscar_por_id(data.id, lista)
     if resultado:
         return resultado

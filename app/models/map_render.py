@@ -4,7 +4,6 @@ from Challenge.app.services.user import find_user
 
 def get_data(data):
     data_user = find_user(data)
-    print(data_user)
     if not data_user:
         return 'User not found'
 
