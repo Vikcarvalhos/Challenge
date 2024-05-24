@@ -6,8 +6,9 @@ import idDois from '../assets/img/gallery/2.jpg';
 import idTres from '../assets/img/gallery/3.jpg';
 import idQuatro from '../assets/img/gallery/4.jpg';
 import idCinco from '../assets/img/gallery/5.jpg';
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import axios from 'axios';
+import Spinner from './Spinner'; // Import the Spinner component
 
 const destinations = {
   'A': 'Cardiologista',
@@ -30,22 +31,30 @@ const destinations = {
 };
 
 function Consulta() {
-  const [id, setId] = useState(null);
+  const [id, setId] = useState('');
   const [result, setResult] = useState(null);
-  Object.entries(destinations).map(([key, value]) => ({
-    value: key,
-    label: value
-  }));
+  const [error, setError] = useState(false);
+  const [loading, setLoading] = useState(false); // Add loading state
+
   const handleSearch = () => {
+    setLoading(true); // Set loading to true when the search starts
     axios.post('http://localhost:5000/', { id }, {
       headers: {
         'Content-Type': 'application/json'
       }
     })
       .then(response => {
-        setResult(response.data);
+        setLoading(false); // Set loading to false when the search ends
+        if (response.data === "User not found") {
+          setError(true);
+          setResult(null);
+        } else {
+          setResult(response.data);
+          setError(false);
+        }
       })
       .catch(error => {
+        setLoading(false); // Set loading to false in case of an error
         console.error('There was an error posting the data!', error);
       });
   };
@@ -53,6 +62,7 @@ function Consulta() {
   const handleNewSearch = () => {
     setId('');
     setResult(null);
+    setError(false);
   };
 
   const getImageById = (id) => {
@@ -74,21 +84,24 @@ function Consulta() {
 
   return (
     <main className='consulta'>
-      {result && (
-        <motion.div
-          className='caminhoDivertido'
-          initial={{ y: 0, opacity: -1 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 1 }}
-        >
-          {result.imagem ? (
-            <img src={`data:image/jpeg;base64,${result.imagem}`} alt="caminhoDivertido" className='consultaImagem' />
-          ) : (
-            <img src={getImageById(result.id)} alt="caminhoDivertido" className='consultaImagem' />
-          )}
-          <button onClick={handleNewSearch} className='buttonConsulta'>Nova Consulta</button>
-        </motion.div>
-      )}
+      <AnimatePresence>
+        {result && (
+          <motion.div
+            className='caminhoDivertido'
+            initial={{ y: 0, opacity: -1 }}
+            animate={{ y: 0, opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 1 }}
+          >
+            {result.imagem ? (
+              <img src={`data:image/jpeg;base64,${result.imagem}`} alt="caminhoDivertido" className='consultaImagem' />
+            ) : (
+              <img src={getImageById(result.id)} alt="caminhoDivertido" className='consultaImagem' />
+            )}
+            <button onClick={handleNewSearch} className='buttonConsulta'>Nova Consulta</button>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       <motion.div
         className='tituloConsulta'
@@ -102,25 +115,40 @@ function Consulta() {
         </div>
       </motion.div>
 
-      {!result && (
-        <motion.div
-          className='centerContent'
-          initial={{ x: 50, opacity: 0 }}
-          animate={{ x: 1, opacity: 1 }}
-          transition={{ duration: 1 }}
-        >
-          <div className='centerContent'>
-            <input
-              type="text"
-              placeholder="Digite o ID"
-              value={id}
-              onChange={e => setId(e.target.value)}
-              className="inputPaciente"
-            />
-            <button onClick={handleSearch} className='buttonConsulta'>Buscar</button>
-          </div>
-        </motion.div>
-      )}
+      <AnimatePresence>
+        {!result && (
+          <motion.div
+            className='centerContent'
+            initial={{ x: 50, opacity: 0 }}
+            animate={{ x: 1, opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 1 }}
+          >
+            <div className='centerContent'>
+              <input
+                type="text"
+                placeholder="Digite o ID"
+                value={id}
+                onChange={e => setId(e.target.value)}
+                className="inputPaciente"
+              />
+              <button onClick={handleSearch} className='buttonConsulta'>Buscar</button>
+            </div>
+            {loading && <Spinner />}
+            {error && (
+              <motion.div
+                className='errorMessage'
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.5 }}
+              >
+                Usuário não encontrado
+              </motion.div>
+            )}
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       {result && (
         <div className='infosPaciente'>
