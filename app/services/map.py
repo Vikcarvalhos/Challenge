@@ -91,7 +91,6 @@ def gerar_imagem_de_array(np_imagem_binaria, caminho_saida_imagem):
     imagem.save(caminho_saida_imagem)
 
 def caminho(destino):
-    print(os.path.dirname(__file__))
     mapa = carregar_array_de_txt_e_converter_para_lista(caminho_path+'/../maps/map.txt')
 
     inicio, posicoes_destinos = encontrar_inicio_e_destinos(mapa)

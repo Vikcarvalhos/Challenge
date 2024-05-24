@@ -7,12 +7,9 @@ def save_data_to_json(data):
     try:
         file_name = datetime.now().strftime('%d-%m-%Y') + '.txt'
         dir_path = caminho_path+'/../../acess_log'
-
         if not os.path.exists(dir_path):
             os.makedirs(dir_path)
-
         file_path = os.path.join(dir_path, file_name)
-
         if file_name in os.listdir(dir_path):
             with open(file_path, 'r+') as file:
                 content = file.read()
@@ -33,7 +30,7 @@ def data_log(data):
         'ip': data.remote_addr,
         'method': data.method,
         'url': data.url,
-        'data': data.get_json(),
+        'data': data.data.decode('utf-8'),
         'time': datetime.now().strftime('%d/%m/%Y - %H:%M:%S'),
         'obs': 'Quero meu 10 kkkkk'
     }

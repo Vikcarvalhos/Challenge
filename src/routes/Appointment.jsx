@@ -32,8 +32,7 @@ const destinations = {
 function Consulta() {
   const [id, setId] = useState(null);
   const [result, setResult] = useState(null);
-
-  const options = Object.entries(destinations).map(([key, value]) => ({
+  Object.entries(destinations).map(([key, value]) => ({
     value: key,
     label: value
   }));
@@ -132,7 +131,7 @@ function Consulta() {
             transition={{ duration: 1 }}
           >
             <p className="informacoes"><h5>Nome:</h5> {result.nome}</p>
-            <p className="informacoes"><h5>Atendimento médico:</h5> {result.atendimento}</p>
+            <p className="informacoes"><h5>Atendimento médico:</h5> {result.destiny}</p>
             <p className="informacoes"><h5>Próxima Consulta:</h5> {result.date}</p>
           </motion.div>
         </div>
