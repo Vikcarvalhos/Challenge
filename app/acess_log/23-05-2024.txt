@@ -47,3 +47,4 @@
 {"ip": "127.0.0.1", "method": "POST", "url": "http://localhost:5000/", "data": {"id": "f97787c537448ff03ccad47b460dd916"}, "time": "23/05/2024 - 22:06:42", "obs": "Quero meu 10 kkkkk"}
 {"ip": "127.0.0.1", "method": "POST", "url": "http://localhost:5000/create", "data": {"nome": "dsfdsfsd sdfsdf ", "email": "dsdfsfsdfds@fdsfsdf.com", "telefone": "1238392469832", "consulta": "A"}, "time": "23/05/2024 - 22:07:31", "obs": "Quero meu 10 kkkkk"}
 {"ip": "127.0.0.1", "method": "POST", "url": "http://localhost:5000/", "data": {"id": "f4bb93b29f2aeb369fbf3ec384a28e13"}, "time": "23/05/2024 - 22:07:38", "obs": "Quero meu 10 kkkkk"}
+{"ip": "127.0.0.1", "method": "POST", "url": "http://localhost:5000/create", "data": {"nome": "dasdas dasda", "email": "asdadasd@dasd.com", "telefone": "125351269129", "consulta": "B"}, "time": "23/05/2024 - 22:10:39", "obs": "Quero meu 10 kkkkk"}

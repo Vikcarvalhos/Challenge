@@ -1,4 +1,4 @@
-from Challenge.app.services.user import create_user
+from app.services.user import create_user
 
 def create(request):
     response = create_user(request)

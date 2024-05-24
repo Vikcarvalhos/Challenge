@@ -83,9 +83,9 @@ function Consulta() {
           transition={{ duration: 1 }}
         >
           {result.imagem ? (
-            <img src={`data:image/jpeg;base64,${result.imagem}`} alt="caminhoDivertido" className='caminhoDivertido' />
+            <img src={`data:image/jpeg;base64,${result.imagem}`} alt="caminhoDivertido" className='consultaImagem' />
           ) : (
-            <img src={getImageById(result.id)} alt="caminhoDivertido" className='caminhoDivertido' />
+            <img src={getImageById(result.id)} alt="caminhoDivertido" className='consultaImagem' />
           )}
           <button onClick={handleNewSearch} className='buttonConsulta'>Nova Consulta</button>
         </motion.div>

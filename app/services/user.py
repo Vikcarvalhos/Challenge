@@ -1,7 +1,7 @@
 import json
 import os
 import re
-from Challenge.app.services.util.generate_hash import generate_md5_hash
+from app.services.util.generate_hash import generate_md5_hash
 caminho_path = os.path.join(os.path.dirname(__file__))
 
 

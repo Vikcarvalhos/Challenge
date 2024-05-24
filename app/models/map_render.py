@@ -1,6 +1,6 @@
-from Challenge.app.services.map import generate_map
-from Challenge.app.services.map import destiny_chose
-from Challenge.app.services.user import find_user
+from app.services.map import generate_map
+from app.services.map import destiny_chose
+from app.services.user import find_user
 
 def get_data(data):
     data_user = find_user(data)
