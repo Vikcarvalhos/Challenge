@@ -8,7 +8,6 @@ import idQuatro from '../assets/img/gallery/4.jpg';
 import idCinco from '../assets/img/gallery/5.jpg';
 import { motion, AnimatePresence } from "framer-motion";
 import axios from 'axios';
-import Spinner from './Spinner'; // Import the Spinner component
 
 const destinations = {
   'A': 'Cardiologista',
