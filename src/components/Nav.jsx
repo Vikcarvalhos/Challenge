@@ -28,10 +28,6 @@ function Nav(){
                             <Link to="/" onClick={closeNav} className='hover-underline'>Início</Link>
                             <Link to="/register" onClick={closeNav} className='hover-underline'>Cadastrar Usuário</Link>
                             <Link to="/appointment" onClick={closeNav} className='hover-underline'>Consulta</Link>
-                            <Link to="/howitworks" onClick={closeNav} className='hover-underline'>Como funciona</Link>
-                            <Link to="/concept" onClick={closeNav} className='hover-underline'>Conceito</Link>
-                            <Link to="/data" onClick={closeNav} className='hover-underline'>Dados</Link>
-                            <Link to="/prototype" onClick={closeNav} className='hover-underline'>Protótipo</Link>
                             <Link to="/register" onClick={closeNav} className='hover-underline'>Cadastro</Link>
                         </div>
                     </div>

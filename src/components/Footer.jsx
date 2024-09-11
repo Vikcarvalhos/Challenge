@@ -20,11 +20,7 @@ function Footer(){
                     <p>Informações</p>
                     <div className='footer-links'>
                         <Link to="/" className='hover-underline'>Nosso projeto</Link>
-                        <Link to="/gallery" className='hover-underline'>Consulta</Link>
-                        <Link to="/howitworks" className='hover-underline'>Como funciona</Link>
-                        <Link to="/concept" className='hover-underline'>Conceito</Link>
-                        <Link to="/data" className='hover-underline'>Dados</Link>
-                        <Link to="/prototype" className='hover-underline'>Protótipo</Link>
+                        <Link to="/appointment" className='hover-underline'>Consulta</Link>
                     </div>
                 </div>
                 <div className='footer-contacts'>
