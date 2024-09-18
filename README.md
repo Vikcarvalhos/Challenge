@@ -17,6 +17,7 @@
 - npm install
 - pip install -r requirements.txt
 - npm run dev
+- npm install firebase
 
 ## Abra outro terminal
 
